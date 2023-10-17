@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(#eee, grey);
+  color: #444;
+  font-family: "Gabarito", sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+}
+
+a {
+  color: black;
+}
+
+button {
+  background-color: #444;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: 700;
+  padding: 8px 24px;
+  transition: background-color 150ms;
+
+  &:hover {
+    background-color: #666;
+  }
+}
+
+strong {
+  color: black;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #0002;
+  padding: 16px 16px;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#game-container {
+  height: 100%;
+  transition: opacity 150ms;
+  width: 100%;
+}
+
+#columns-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+#columns {
+  display: flex;
+  gap: 2px;
+  rotate: x 70deg;
+  transform-style: preserve-3d;
+}
+
+#stats-card {
+  font-size: 24px;
+  left: 50%;
+  position: absolute;
+  top: 32px;
+  transform: translateX(-50%);
+}
+
+#miss-overlay {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+#info-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  translate: -50% -50%;
+  width: min(90vw, 512px);
+}
+
+#made-by-me {
+  bottom: 16px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}

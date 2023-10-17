@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTilesML</title>
+    <meta
+      name="description"
+      content="An experimental game made with HTML and 3D CSS transforms."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="entry.js" type="module"></script>
+  </head>
+  <body>
+    <div id="game-container" class="hidden">
+      <div id="miss-overlay"></div>
+      <div id="columns-container">
+        <div id="columns"></div>
+      </div>
+      <div id="stats-card" class="card">
+        <div>Difficulty: <span id="difficulty-level">1</span></div>
+        <div>Your best: <span id="best-difficulty-level"></span></div>
+      </div>
+    </div>
+    <div id="info-card" class="card">
+      <p>
+        This game is an experiment with HTML and CSS.<br />
+        <strong>Everything</strong> you see here is an HTML element.<br />
+        <br />
+        Use the <strong>D</strong>, <strong>F</strong>, <strong>Space</strong>,
+        <strong>J</strong> and <strong>K</strong> keys or touch to hit each
+        note.<br />
+        Hit a note when it overlays the light grey marker exactly.
+      </p>
+      <button id="start-button">M'kay</button>
+    </div>
+    <p id="made-by-me">
+      Made by <a href="https://github.com/luizffgv">luizffgv</a>
+    </p>
+  </body>
+</html>
